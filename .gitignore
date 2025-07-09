@@ -1,0 +1,161 @@
+# ===== Existing Rules =====
+.venv
+/data
+/jupyter
+/downloads
+/.ipynb_checkpoints
+/.vscode
+.DS_Store
+
+# ===== Python Standard =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pi_yolo_env/
+
+# ===== ML/AI Specific =====
+
+# Model files (too large for git)
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.pb
+*.h5
+*.hdf5
+*.ckpt
+*.safetensors
+
+# Dataset files
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.tif
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+*.webm
+
+# Dataset directories
+datasets/
+pyronear_*/
+pyronear_dataset/
+pyronear_pi4_8gb/
+raspberry_pi_yolo/pyronear_*/
+
+# Training outputs
+runs/
+logs/
+checkpoints/
+weights/
+models/
+*.log
+
+# Evaluation results
+evaluation_results/
+predictions/
+ground_truth/
+results/
+metrics/
+
+# Jupyter notebooks
+*.ipynb
+
+# Weights & Biases
+wandb/
+
+# TensorBoard
+tensorboard_logs/
+events.out.tfevents.*
+
+# MLflow
+mlruns/
+
+# ===== Project Specific =====
+
+# Configuration files with sensitive data
+config_*.yaml
+!config_example.yaml
+!config_template.yaml
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# ===== Raspberry Pi Specific =====
+
+# Pi temperature logs
+temp_logs/
+thermal_logs/
+
+# ===== Development =====
+
+# Test files
+test_*.py
+*_test.py
+tests/
+
+# Documentation builds
+docs/_build/
+site/
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Profiling
+*.prof
+*.lprof

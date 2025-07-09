@@ -1,0 +1,8 @@
+names:
+- fire
+- smoke
+nc: 2
+path: pyronear_pi4_8gb/images
+test: ''
+train: train
+val: val
