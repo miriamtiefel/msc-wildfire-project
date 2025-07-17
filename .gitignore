@@ -159,3 +159,15 @@ coverage.xml
 # Profiling
 *.prof
 *.lprof
+
+# Ignore dataset folders
+pyronear data/
+pyronear_data_downloaded/
+my_downloaded_dataset/
+*.zip
+*.tar.gz
+*.tar
+*.h5
+*.pt
+*.pth
+*.ckpt
