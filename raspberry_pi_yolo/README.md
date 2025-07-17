@@ -1,7 +1,7 @@
 # Raspberry Pi YOLO Wildfire Detection
 
 Notes to myself:
-Train on PC: python train.py --pyronear_path "path" --epochs 100
+Train on PC: python train.py --pyronear_path "/vol/bitbucket/mst124/pyronear_data_downloaded/pyronear2025" --epochs 100
 Copy model to Pi: scp runs/gpu-wildfire-detection/*/weights/best.pt pi@ip:~/
 Run on Pi: python inference.py --model_path best.pt --source 0 --stream
 
@@ -86,10 +86,14 @@ Train a model with GPU optimizations on PC:
 
 ```bash
 python train.py \
-    --pyronear_path /path/to/pyronear/dataset \
+    --pyronear_path "/vol/bitbucket/mst124/pyronear_data_downloaded/pyronear2025" \
     --epochs 100 \
     --model_weights yolov8n.pt
 ```
+
+**Alternative dataset paths:**
+- If extracted locally: `--pyronear_path "./pyronear_data_downloaded/pyronear2025"`
+- If extracted elsewhere: `--pyronear_path "/path/to/your/extracted/pyronear2025"`
 
 **Requirements:**
 - NVIDIA GPU with CUDA support
